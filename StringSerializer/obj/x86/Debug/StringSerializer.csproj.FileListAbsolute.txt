@@ -1,0 +1,5 @@
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\StringSerializer\bin\Debug\StringSerializer.dll
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\StringSerializer\bin\Debug\StringSerializer.pdb
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\StringSerializer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\StringSerializer\obj\x86\Debug\StringSerializer.dll
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\StringSerializer\obj\x86\Debug\StringSerializer.pdb
