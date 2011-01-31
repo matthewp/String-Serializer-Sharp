@@ -1,3 +1,10 @@
+For those who have had the pain of working with flat files, whether delimited or fixed-width, this should make things a bit easier to convert between a string and an object.  Simply provided the position, length, name, and type of your fixed width fields, and the FixedWidthString object can serialize and deserialize for you.
+
+* Type is optional, when the type is not a string.
+* Type can be the System.Type or a string representation (as in the example).  This makes it possible to store the schema in a database or xml template.
+
+NOTICE: This initial release doesn't include support for delimited files. Coming soon.
+
 string input = @"Some Guy                               4550000.00 ";
 FixedWidthString fws = new FixedWidthString();
 fws.Fields = new FixedWidthField[3];
