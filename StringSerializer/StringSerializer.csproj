@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseObjectField.cs" />
+    <Compile Include="BaseObjectString.cs" />
+    <Compile Include="Constants\DelimitedExpressions.cs" />
+    <Compile Include="DelimitedField.cs" />
+    <Compile Include="DelimitedString.cs" />
     <Compile Include="FixedWidthField.cs" />
     <Compile Include="FixedWidthString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

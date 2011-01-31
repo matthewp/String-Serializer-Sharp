@@ -4,14 +4,13 @@ using System.Text;
 
 namespace StringSerializer
 {
-    public class FixedWidthField
+    public class FixedWidthField : BaseObjectField
     {
         private Type _type = null;
         
         public int StartingPosition { get; set; }
         public int Length { get; set; }
-        public string PropertyName { get; set; }
-        public Type Type
+        public override Type Type
         {
             get { return _type; }
             set { _type = value; }

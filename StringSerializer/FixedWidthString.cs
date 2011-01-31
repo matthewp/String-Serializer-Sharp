@@ -6,9 +6,9 @@ using System.Text;
 
 namespace StringSerializer
 {
-    public class FixedWidthString
+    public class FixedWidthString : BaseObjectString<FixedWidthField>
     {
-        public FixedWidthField[] Fields;
+        public override FixedWidthField[] Fields { get; set; }
 
         #region Constructors
         public FixedWidthString() { }
@@ -23,19 +23,16 @@ namespace StringSerializer
 
         public T Deserialize<T>(string objectString) where T : new()
         {
-            T item = new T();
-            Type type = typeof(T);
+            string[] stringFields = new string[Fields.Length];
 
             for (int i = 0; i < Fields.Length; i++)
             {
                 FixedWidthField field = Fields[i];
-
-                string fieldString = objectString.Substring(field.StartingPosition, field.Length).Trim();
-                object fieldValue = field.Type == null ? fieldString : Convert.ChangeType(fieldString, field.Type);
-                type.GetProperty(field.PropertyName).SetValue(item, fieldValue, null);
+                field.Index = i;
+                stringFields[i] = objectString.Substring(field.StartingPosition, field.Length).Trim();
             }
 
-            return item;
+            return base.Deserialize<T>(stringFields);
         }
 
         public string Serialize(object obj)

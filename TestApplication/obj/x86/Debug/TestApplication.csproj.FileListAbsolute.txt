@@ -1,0 +1,8 @@
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\bin\Debug\TestApplication.exe.config
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\bin\Debug\TestApplication.exe
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\bin\Debug\TestApplication.pdb
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\bin\Debug\StringSerializer.dll
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\bin\Debug\StringSerializer.pdb
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\obj\x86\Debug\TestApplication.exe
+C:\Users\MaPhillips\Documents\My Work\Playground\StringSerializer\TestApplication\obj\x86\Debug\TestApplication.pdb
