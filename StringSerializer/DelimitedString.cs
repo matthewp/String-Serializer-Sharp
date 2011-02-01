@@ -37,5 +37,27 @@ namespace StringSerializer
 
             return base.Deserialize<T>(stringFields);
         }
+
+        public string Serialize(object obj)
+        {
+            Type type = obj.GetType();
+
+            StringBuilder sb = new StringBuilder();
+
+            var orderedFields = Fields.OrderBy(a => a.Position);
+
+            int cnt = 0, fieldCount = orderedFields.Count();
+            foreach (var field in orderedFields)
+            {
+                cnt++;
+
+                string fieldValue = type.GetProperty(field.PropertyName).GetValue(obj, null).ToString();
+                sb.Append((hasEnclosure ? Enclosure + fieldValue + Enclosure : fieldValue));
+
+                if (cnt != fieldCount) sb.Append(Separator);
+            }
+
+            return sb.ToString();
+        }
     }
 }

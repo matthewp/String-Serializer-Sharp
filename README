@@ -3,8 +3,6 @@ For those who have had the pain of working with flat files, whether delimited or
 * Type is optional, when the type is not a string.
 * Type can be the System.Type or a string representation (as in the example).  This makes it possible to store the schema in a database or xml template.
 
-NOTICE: This initial release doesn't include support for serializing delimited files.  Deserialization does work.
-
 string input = @"Some Guy                               4550000.00 ";
 FixedWidthString fws = new FixedWidthString();
 fws.Fields = new FixedWidthField[3];

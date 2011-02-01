@@ -49,6 +49,7 @@ namespace TestApplication
             Person person = ds.Deserialize<Person>(input);
             Console.WriteLine(String.Format("Name: {0}, Age: {1}, Income {2}", person.Name, person.Age, person.Income));
             Console.WriteLine(String.Format("|{0}| <-- Original", input));
+            Console.WriteLine(String.Format("|{0}| <-- Generated", ds.Serialize(person)));
             Console.ReadKey();
         }
     }
